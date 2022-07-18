@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_my_notes/constants/routes.dart';
 import 'package:flutter_my_notes/views/login_view.dart';
 import 'package:flutter_my_notes/views/register_view.dart';
+import 'package:flutter_my_notes/views/verify_email_view.dart';
 import 'firebase_options.dart';
 
 void main() {
@@ -19,6 +20,7 @@ void main() {
       loginRoute: (context) => const LoginView(),
       registerRoute: (context) => const RegisterView(),
       notesRoute: (context) => const NoteView(),
+      verifyEmailRoute: (context) => const VerifyEmailView(),
     },
   ));
 }
