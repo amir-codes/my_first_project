@@ -32,7 +32,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return FutureBuilder(
       future: AuthService.firebase().initialize(),
-      builder: (context, snapshot) {
+      builder: (context, snapshot) {                                                                                                                                                                                                                                                                                                                                                                                                                  
         switch (snapshot.connectionState) {
           case ConnectionState.done:
             final user = AuthService.firebase().currentuser;
